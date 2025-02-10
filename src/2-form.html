@@ -11,14 +11,24 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./1-gallery.html">Gallery</a></li>
             <li><a href="./2-form.html">Form</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <ul class="gallery"></ul>
+    <div class="container-form">
+        <form class="feedback-form" autocomplete="off">
+            <label class="email-input">
+                Email
+                <input type="email" name="email" autofocus />
+            </label>
+            <label class="message-input">
+                Message
+                <textarea name="message" rows="8"></textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
     </div>
     <script src="./js/2-form.js" type="module"></script>
 </body>
